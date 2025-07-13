@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: antiquewhite;
+            border: 2px solid black;
+            padding: 5px;
+            margin: 3px;
+        }.boxleft{
+            border: 2px solid black;
+           align-self: center;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+        }
+        .boxright{
+            width: 200px;
+            border: 1px solid gainsboro;
+        }
+        p{
+            border: 1px solid blue;
+            background-color: rgb(80, 58, 100);
+        }
+        @media(max-width:1000px){
+            .container{
+                flex-direction: column-reverse;
+            }
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="boxleft">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, facere.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, vero!
+            </p>
+            
+        </div>
+        <div class="boxright">
+            <img  width="700px" src="img2.jpg" alt="nature image">
+        </div>
+    </div>
+</body>
+</html>

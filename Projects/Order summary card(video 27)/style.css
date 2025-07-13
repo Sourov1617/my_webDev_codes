@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(250, 235, 215, 0.553);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.907);
+}
+.hero-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+    text-align: center;
+    padding: 0 10px;
+}
+.textbox h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f2937;
+}
+.textbox p {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.5;
+}
+.annual_plan {
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    width: 85%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.plan-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.imgbox img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.amountbox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.amountbox p:first-child {
+    font-weight: bold;
+    color: #1f2937;
+}
+.amountbox p:last-child {
+    color: #6b7280;
+}
+.annual_plan a {
+    color: #4f46e5;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.annual_plan a:hover {
+    color: #4338ca;
+    text-decoration: none;
+}
+#b1 {
+    width: 85%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4f46e5;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(79, 70, 229, 0.25);
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#b1:hover {
+    background-color: #4338ca;
+    transform: translateY(-1px);
+}
+#cancel {
+    text-decoration: none;
+    color: #6b7280;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+    margin-bottom: 20px;
+}
+#cancel:hover {
+    color: #374151;
+}

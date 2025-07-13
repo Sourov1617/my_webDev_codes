@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.para{
+    display:inline-block;
+    margin-bottom: 10px;
+
+}

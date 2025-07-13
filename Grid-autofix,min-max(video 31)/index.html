@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+
+    }
+    .container{
+        height: 100%;
+        width: 100%;
+        background: #7b6987;
+        display: grid;
+        padding: 2rem;
+        gap: 1rem;
+        /* grid-template-columns: repeat(auto-fit,minmax(250px,550px)); */
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        grid-template-areas: 
+        "header header header"
+        "sidebar container1 container1"
+        "sidebar container2 container3"
+        "footer footer footer"
+        ;
+    }
+    .item{
+        padding: 1rem;
+        color: antiquewhite;
+        border: 3px solid black;
+        background-color: rgb(55, 55, 106);
+
+    }
+    #header{
+        grid-area: header;
+    }
+    #sidebar{
+        grid-area: sidebar;
+    }
+    #container1{
+        grid-area: container1;
+    }
+    #container2{
+        grid-area: container2;
+    }
+    #container3{
+        grid-area: container3;
+    }
+    #footer{
+        grid-area: footer;
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="header" class="item">A</div>
+        <div id="sidebar" class="item">B</div>
+        <div id="container1" class="item">C</div>
+        <div id="container2" class="item">D</div>
+        <div id="container3" class="item">E</div>
+        <div id="footer" class="item">F</div>
+    </div>
+</body>
+</html>

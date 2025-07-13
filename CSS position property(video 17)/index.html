@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positoin poperty</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+       
+
+        div {
+
+            border: 1px solid black;
+        }
+
+        img {
+            margin: 5px;
+        }
+
+        .img2 {
+            /* position: relative; */
+            /* top: 80px; */
+            /* left: 30px; */
+
+            /* position: absolute; */
+            /* top: 80px; */
+            /* left: 30px; */
+
+        }
+        .container{
+            position: relative;
+            background-color: rgb(19, 101, 129);
+            height: 1000px;
+        }
+        
+        .img4{
+            position: fixed;
+        }
+        .img3{
+            position: sticky;
+            top: 200px;
+        }
+        .box{
+            background-color: rgb(33, 109, 25);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="img1" width="300px" height="300px" src="img1.jpg" alt="poster 1" h>
+        <img class="img2" width="300px" height="300px" src="img2.jpg" alt="poster 2">
+        <img class="img3" width="300px" height="300px" src="img3.webp" alt="poster 3">
+        <img class="img4" width="300px" height="300px" src="img4.webp" alt="poster 4">
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+
+</html>
